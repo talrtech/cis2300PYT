@@ -1,0 +1,20 @@
+monthlyBudget = 0.0
+expenses = 0.0
+total = 0.0
+monthlyBudget = int(input('What is your monthly budget? '))
+
+
+while (expenses >= 0):
+    expenses = float(input("enter an expense or enter -1 when done " ))
+   
+    if (expenses >= 0):
+        total = total + expenses
+print('the total is ', total)
+        
+if total > monthlyBudget:
+    over = total - monthlyBudget
+    print("You are", over, "over budget. PLAN BETTER NEXT MONTH!")
+else:
+    under = monthlyBudget - total
+    print("You are",under,"under budget. Spending matches budget. GOOD PLANNNING!")
+          
