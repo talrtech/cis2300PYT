@@ -1,0 +1,48 @@
+Talia Ritholtz
+June 13 2019
+The Gap Assignment
+
+
+jeansPrice = 0.0
+
+shirtPrice = 0.0
+
+stateTax = 0.0
+
+countyTax = 0.0
+
+totalSalesTax = 0.0
+
+total = 0.0
+
+STATE_TAXRATE = 0.04
+
+COUNTY_TAXRATE = 0.03875
+
+jeansPrice = float(input("the price of jeans:")) 
+the price of jeans:30
+
+shirtPrice = float(input("the price of the t-shirt:"))
+the price of the t-shirt:40
+
+stateTax = STATE_TAXRATE * (jeansPrice + shirtPrice) 
+
+countyTax = COUNTY_TAXRATE * (jeansPrice + shirtPrice)
+
+total = jeansPrice + shirtPrice + countyTax + stateTax
+
+totalSalesTax = countyTax + stateTax
+print ("Amount of purchase: $", format(jeansPrice + shirtPrice, '.2f'))
+
+print ("The state sales tax is $", format(stateTax, '.2f'))
+
+print ("The county sales tax is $", format(countyTax, '.2f'))
+
+print ("The total sales tax is $", format(totalSalesTax, '.2f'))
+
+print ("Your total is $", format(total, '.2f'))
+Amount of purchase: $ 70.00
+The state sales tax is $ 2.80
+The county sales tax is $ 2.71
+The total sales tax is $ 5.51
+Your total is $ 75.51
