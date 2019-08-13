@@ -1,0 +1,31 @@
+
+def determine_grade(score):
+    if score > 89:
+        return('A')
+    elif score > 79:
+        return('B')
+    elif score > 69:
+        return('C')
+    elif score > 59:
+        return('D')
+    else:
+        return('F')
+
+
+def calc_average():
+    return((score1 + score2 + score3 + score4 + score5)/5)
+
+
+score1 = float(input('Enter score for test 1 '))
+print(determine_grade(score1)) 
+score2 = float(input('Enter score for test 2 '))
+print(determine_grade(score2))
+
+score3 = float(input('Enter score for test 3 '))
+print(determine_grade(score3))
+score4 = float(input('Enter score for test 4 '))
+print(determine_grade(score4))
+score5 = float(input('Enter score for test 5 '))
+print(determine_grade(score5))
+
+print("The average score is ", calc_average())
