@@ -1,0 +1,44 @@
+girl = input('enter a girls name or N if you do not want to: ')
+if girl == 'N' or girl == 'n':
+    print('You chose not to enter a Girls name')
+    
+boy = input('enter a boys name or N if you do not want to: ')
+if boy == 'N' or boy == 'n':
+    print('You chose not to enter a boys name')
+
+    
+girlfile = open('girlNames.txt','r')
+
+
+glines = girlfile.readlines()
+
+
+
+#use a for loop to look through every element in the list to get rid of the trailing new line element from your list
+for string in range(len(glines)):
+    glines[string] = glines[string].rstrip('\n')   
+
+if (girl in glines):
+    print(girl, "is one of the most popular names between the years 2000 and 2009")
+else:
+    print(girl, "is NOT one of the most popular names between the years 2000 and 2009")
+
+girlfile.close()
+
+
+
+boyfile = open('boyNames.txt','r')
+
+blines = boyfile.readlines()
+
+
+for string in blines:
+    blines = string.rstrip('\n')
+
+    
+if (boy in blines):
+    print(boy, "is one of the most popular names between the years 2000 and 2009")
+else:
+    print(boy, "is NOT one of the most popular names between the years 2000 and 2009")
+boyfile.close()
+
