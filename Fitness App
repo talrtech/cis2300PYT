@@ -1,0 +1,34 @@
+yoga_users = set({"Talia","Chandler","Joey","Rachel","Ross","Monica"})
+runner_users = set({"Michael","Pam","Dwight","Talia","Rachel","Jim","Kevin","Kelly"})
+print("USERS WHO LIKE YOGA:")
+for user in yoga_users:
+    print(user)
+print('')
+print("USERS WHO LIKE RUNNING:")
+for user in runner_users:
+    print(user)
+
+active_users = yoga_users & runner_users
+print('')
+print("Users who enjoy BOTH Yoga and Running:")
+print(active_users)
+
+either_users = yoga_users | runner_users
+print('')
+print("Users who enjoy EITHER Yoga and Running:")
+print(either_users)
+
+only_yoga = yoga_users - runner_users
+print('')
+print("Users who enjoy ONLY Yoga:")
+print(only_yoga)
+
+only_running = runner_users - yoga_users 
+print('')
+print("Users who enjoy ONLY Running:")
+print(only_running)
+
+one_sport = runner_users ^ yoga_users 
+print('')
+print("The users who only like ONE sport:")
+print(one_sport)
