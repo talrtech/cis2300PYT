@@ -1,0 +1,21 @@
+Talia Ritholtz
+06/20/19
+Rectangles
+
+widthOne = float(input('What is the width of the 1st rectangle? '))
+widthTwo = float(input('What is the width of the 2nd rectangle? '))
+
+lengthOne = float(input('What is the length of the 1st rectangle? '))
+lengthTwo = float(input('What is the length of the 2nd rectangle? '))
+
+areaOne = widthOne*lengthOne
+
+areaTwo = widthTwo*lengthTwo
+
+if areaOne > areaTwo:
+    print('Rectangle 1 has a greater area of', areaOne)
+elif areaOne == areaTwo:
+    print('The area\'s of the two rectangles are the same!', areaOne)
+else:
+      print('Rectangle 2 has a greater area of', areaTwo)
+
