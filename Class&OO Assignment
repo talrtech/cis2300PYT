@@ -1,0 +1,15 @@
+class Coffee:
+    def __init__(self, has_ice):
+        self.__has_ice = has_ice
+    def set_sugar(self, sugar):
+        self.__sugar = sugar
+    def get_sugar(self):
+        return self.__sugar
+
+my_cup = Coffee(True)
+my_cup.set_sugar(1)
+    
+your_cup = Coffee(False)
+your_cup.set_sugar(3)
+print("My cup has", my_cup.get_sugar(), "Teaspoon(s) of sugar in it.")
+print("Your cup has", your_cup.get_sugar(), "Teaspoon(s) of sugar in it.")   
